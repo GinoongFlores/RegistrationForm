@@ -124,13 +124,13 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnRegister.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnRegister.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnRegister.Location = new System.Drawing.Point(64, 364);
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRegister.Location = new System.Drawing.Point(29, 359);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(169, 36);
+            this.btnRegister.Size = new System.Drawing.Size(240, 40);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -139,10 +139,11 @@
             // btnClear
             // 
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnClear.Location = new System.Drawing.Point(64, 415);
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnClear.Location = new System.Drawing.Point(29, 417);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(169, 36);
+            this.btnClear.Size = new System.Drawing.Size(240, 36);
             this.btnClear.TabIndex = 6;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -151,7 +152,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label5.Location = new System.Drawing.Point(60, 483);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(187, 19);
