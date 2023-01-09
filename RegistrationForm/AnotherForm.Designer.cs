@@ -1,6 +1,6 @@
 ﻿namespace RegistrationForm
 {
-    partial class Form1
+    partial class AnotherForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // AnotherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 450);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(308, 592);
+            this.Name = "AnotherForm";
+            this.Text = "AnotherForm";
+            this.Load += new System.EventHandler(this.AnotherForm_Load);
             this.ResumeLayout(false);
 
         }
@@ -44,4 +45,3 @@
         #endregion
     }
 }
-

@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace RegistrationForm
 {
-    public partial class Form1 : Form
+    public partial class AnotherForm : Form
     {
-        public Form1()
+        public AnotherForm()
         {
             InitializeComponent();
+        }
+
+        
+
+        private void AnotherForm_Load(object sender, EventArgs e)
+        {
+           
+            
         }
     }
 }
