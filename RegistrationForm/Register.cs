@@ -47,7 +47,7 @@ namespace RegistrationForm
         private void btnRegister_Click(object sender, EventArgs e)
         {
 
-            if (txtBxUsername.Text != string.Empty || txtBxPassword.Text != string.Empty && txtBxConfirmPassword.Text != string.Empty)
+            if (txtBxUsername.Text != String.Empty && txtBxPassword.Text != String.Empty && txtBxConfirmPassword.Text != String.Empty)
             {
                 if(txtBxPassword.Text == txtBxConfirmPassword.Text)
                 {
@@ -58,24 +58,32 @@ namespace RegistrationForm
 
                     if(dr.Read())
                     {
+                        dr.Close();
                         MessageBox.Show("Username is Already Exist, Please try again", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     } else
                     {
                         dr.Close();
+
+                        if (txtBxPassword.Text == txtBxConfirmPassword.Text)
+                        {
+                            MessageBox.Show("Password Matched!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
                         string register = "INSERT INTO tbl_users VALUES ('" + txtBxUsername.Text + "','" + txtBxPassword.Text + "')";
                         cmd = new OleDbCommand(register, con);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Your Account is created, Please click the Login Below", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     }
 
                     con.Close();
 
-                } 
-                
+                }
+
                 else
                 {
                     MessageBox.Show("Password Not Matched!", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                } 
             } 
             
             else
